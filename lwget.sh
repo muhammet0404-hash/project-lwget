@@ -9,7 +9,7 @@ touch "$COADA" "$DESCARCAT"
 if ! grep -qx "$URL" "$DESCARCAT"; then
     echo " Download HTML: $URL"
 
-    FISIER="index.html"
+    FISIER="index1.html"
     wget -q -O "$FISIER" "$URL"
 
     echo "$URL" >> "$DESCARCAT"
